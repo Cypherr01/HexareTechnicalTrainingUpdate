@@ -1,0 +1,10 @@
+JWT
+To enable SSO we use a secure protocol, called JSON Web Token (JWT), of transferring user authentication data from the client systems to Engage Digital. JWT is a fairly recent standard, but it is open, simple and with strong support. You can read more about it on the IETF website and you’ll be able to find a large number of open source implementations for most languages. You can find a JWT example below.
+
+Configuration
+In order to benefit from SSO you will need to add the extension and properly configure it in the administration interface. Here’s a short explanation of what each of these fields means:
+
+Remote login url: we will redirect the user to this URL if he hits our application unauthenticated. At this endpoint you will have to log the user in and then redirect him back to us. Please also read about the return_to parameter.
+Shared Secret (mandatory): this is a random string that will be used by you to encode and sign the JWT token and by us to check its integrity. You will need to keep this secure - if compromised you will need to generate a new one and start using it in your implementation as well.
+Remote logout url (optional): after the user signs out from our application we will redirect him to this URL. This will make it possible for you to sign him out from all other systems.
+Endpoint URL: this is a read-only field, meant to show you where your implementation should redirect with the JWT token after the user has authenticated into your system. This always has the form:

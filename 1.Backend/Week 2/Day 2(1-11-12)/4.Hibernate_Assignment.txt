@@ -1,0 +1,7 @@
+Learn and practice Hibernate
+
+
+Create Hibernate project with Layered architecture and menu.
+Note: TAke any one entity class from ur case study
+
+Perform INSER,UPDATE,DELETE,SELECT BY ID , SELECT ALL(createQuery or namedQuery)

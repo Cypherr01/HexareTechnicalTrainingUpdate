@@ -1,0 +1,56 @@
+Assignment:
+
+Create Spring MVC Project using SpringBoot.
+Add spring web , mysql  dependencies
+
+Create one Entity class
+
+Create Controller class for above entity
+in this controller create POST ,GET OPeration
+
+----------------------------------------------------
+
+Project Week2 WORK / Sprint-2:
+
+Write or Return hardcode values in service class all methods according.
+
+Write test cases in each test method for actual value call service class methods which return hardcoded value
+compare actual value with expected value(hardcoded)
+
+
+Create git repository and start sharing code using git.
+
+-----------------------------------------------------------
+Hibernate basics
+HQL/JPQL 
+Mappings
+
+===============================================================
+Most Import annotation
+---------------------
+Hibernate JPA 
+@Entity , @Id
+@Table , @Column
+\
+Mapping:
+@OneToOne
+@OneToMany / @ManyToOne
+@ManyToMany
+
+Spring
+stereo type annotation
+@Component
+@Service
+@Repository
+@Controller
+@Bean
+
+@Autowire
+
+
+
+
+
+
+
+

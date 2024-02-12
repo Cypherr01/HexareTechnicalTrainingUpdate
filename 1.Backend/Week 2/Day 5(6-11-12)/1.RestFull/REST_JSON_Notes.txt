@@ -1,0 +1,109 @@
+REST:
+=====
+REpresentational State Transfer
+REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. REST-compliant systems, often called RESTful systems, are characterized by how they are stateless and separate the concerns of client and server. 	
+
+
+Separation of Client and Server
+In the REST architectural style, the implementation of the client and the implementation of the server can be done independently without each knowing about the other. This means that the code on the client side can be changed at any time without affecting the operation of the server, and the code on the server side can be changed without affecting the operation of the client.
+
+As long as each side knows what format of messages to send to the other, they can be kept modular and separate. Separating the user interface concerns from the data storage concerns, we improve the flexibility of the interface across platforms and improve scalability by simplifying the server components. Additionally, the separation allows each component the ability to evolve independently.
+
+By using a REST interface, different clients hit the same REST endpoints, perform the same actions, and receive the same responses.
+
+
+
+Statelessness
+Systems that follow the REST paradigm are stateless, meaning that the server does not need to know anything about what state the client is in and vice versa. In this way, both the server and the client can understand any message received, even without seeing previous messages.
+
+
+
+Communication between Client and Server
+In the REST architecture, clients send requests to retrieve or modify resources, and servers send responses to these requests. Let’s take a look at the standard ways to make requests and send responses.
+
+
+HTTP Verbs
+There are 4 basic HTTP verbs we use in requests to interact with resources in a REST system:
+
+GET — retrieve a specific resource (by id) or a collection of resources
+POST — create a new resource
+PUT — update a specific resource (by id)
+DELETE — remove a specific resource by id
+
+
+MIME Types, used to specify the content types in the Accept field, consist of a type and a subtype. They are separated by a slash (/).
+
+For example, a text file containing HTML would be specified with the type text/html. If this text file contained CSS instead, it would be specified as text/css. A generic text file would be denoted as text/plain. This default value, text/plain, is not a catch-all, however. If a client is expecting text/css and receives text/plain, it will not be able to recognize the content.
+
+Other types and commonly used subtypes:
+
+image — image/png, image/jpeg, image/gif
+audio — audio/wav, audio/mpeg
+video — video/mp4, video/ogg
+application — application/json, application/pdf, application/xml, application/octet-stream
+
+
+Annotations used for RESTful Web services/applications
+
+@RestController   --> Restful Controllers      
+
+@RequestMapping   --> For base url at class level
+
+Http Requests:
+
+@GetMapping   --> to get/fetch data its for all records or specific records based on any property
+
+@PostMapping --> to insert a new resource or to create new record
+
+@PutMapping --> to update existing resource/resources
+
+@DeleteMapping -->  to delete or remove resource 
+
+
+
+@RestController =   @Controller  + @ResponseBody
+
+
+@RequestBody --> to read data from request body of any request object  POST/PUT
+
+@PathVariable --> to read data from the path or from url path
+
+
+
+
+JSON:
+JSON stands for JavaScript Object Notation
+
+JSON is a text format for storing and transporting data
+
+JSON is "self-describing" and easy to understand
+
+
+Note: All Platforms and Technologies supports JSON by default.
+
+Example:
+
+
+employee:{
+	  "eid":101,
+	  "ename":"javeed",
+	  "salary":50000,
+	  "address": {    
+
+		"city":"hyderabad",
+		"state":"Telangana"
+		    }
+
+
+    }
+
+employees: [
+		{"eid":101},
+		{"eid":102},
+		{"eid":103}
+
+        ]
+
+
+
+

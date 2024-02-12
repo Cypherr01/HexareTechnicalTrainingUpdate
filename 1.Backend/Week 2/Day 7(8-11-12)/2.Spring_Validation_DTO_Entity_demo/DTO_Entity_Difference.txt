@@ -1,0 +1,49 @@
+
+Entity class
+
+===============
+
+@Entity
+@Table(name="product_table")                    ====> Product_Table (productId, pname, price)
+class Product{
+
+	@Id                              
+	@Column(name="productId")
+	private int pid;
+	private String pname;                           product <--- customer <---- address
+	private double price;
+
+	@OneToOne
+	Customer customer;
+
+}
+=============================
+
+DTO / POJO / ViewObject classes:
+
+class  ProductDTO{
+
+	private int pid;
+	private String pname;
+	private double price;
+	private Customer customer;
+
+
+}
+
+
+
+We use DTO to transfer data from client to server and also to retrieve data from server to client.
+
+
+Request  ---> DTO ---> Entity ---> Repository
+
+
+Response <------  DTO <------ Entity <----- Repository
+
+
+
+
+
+
+

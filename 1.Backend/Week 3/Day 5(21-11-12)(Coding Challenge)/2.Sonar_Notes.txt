@@ -1,0 +1,11 @@
+SonarQube (formerly Sonar)[3] is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs and code smells on 29 programming languages. SonarQube offers reports on duplicated code, coding standards, unit tests, code coverage, code complexity, comments, bugs, and security recommendations.[4][5]
+
+SonarQube provides fully automated analysis and integration with Maven, Ant, Gradle, MSBuild and continuous integration tools (Atlassian Bamboo, Jenkins, Hudson, etc.).[6][7][8]
+
+Overview
+SonarQube supports the programming languages Java (including Android), C#, C, C++, JavaScript, TypeScript, Python, Go, Swift, COBOL, Apex, PHP, Kotlin, Ruby, Scala, HTML, CSS, ABAP, Flex, Objective-C, PL/I, PL/SQL, RPG, T-SQL, VB.NET, VB6, and XML.[9] As of December 2021, analyzing C, C++, Obj-C, Swift, ABAP, T-SQL, and PL/SQL is only available via a commercial license.
+
+SonarQube is available for free under the GNU Lesser General Public License. An enterprise version for paid licensing also exists, as well as a data center edition that supports high availability.[10][11]
+
+SonarLint
+SonarQube is expandable with the use of plug-ins. It integrates with the Eclipse, Visual Studio, Visual Studio Code, and IntelliJ IDEA development environments through SonarLint plug-ins, as well as external tools such as LDAP, Active Directory, and GitHub.[12][13]
